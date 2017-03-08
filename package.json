@@ -1,0 +1,14 @@
+{
+  "name": "tabris-v1.10-tab-layout",
+  "version": "1.0.0",
+  "description": "An example UI of tab layout and sug pages",
+  "main": "./src/app.js",
+  "scripts": {
+    "start": "http-server -c-1 -d false"
+  },
+  "author": "Cam Stuart",
+  "license": "ISC",
+  "dependencies": {
+    "tabris": "^1.10.0"
+  }
+}

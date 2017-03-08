@@ -1,0 +1,18 @@
+{
+  "page": {
+    "bgColor": "#ffffff",
+    "textColor": "#292b2c",
+    "fontStyle": "16px"
+  },
+  "button": {
+    "primary": {
+      "bgColor": "#0275d8",
+      "textColor": "#ffffff",
+      "fontStyle": "bold 16px"
+    }
+  },
+  "pageTile": {
+    "fontStyle": "bold 26px",
+    "textColor": "#292b2c"
+  }
+}
