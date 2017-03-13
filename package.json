@@ -9,6 +9,6 @@
   "author": "Cam Stuart",
   "license": "ISC",
   "dependencies": {
-    "tabris": "^1.10.0"
+    "tabris": "1.9.0"
   }
 }
