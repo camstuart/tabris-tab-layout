@@ -1,6 +1,7 @@
 const {Page, Button, TextInput, TextView} = require('tabris');
-const style                        = require('../cfg/style.json');
-const MainTabPage                  = require('./mainTabPage.js');
+const style                               = require('../cfg/style.json');
+const MainTabPage                         = require('./mainTabPage.js');
+const auth                                = require('./lib/authentication.js');
 
 exports.create = () => {
 
@@ -47,6 +48,7 @@ exports.create = () => {
         image: 'assets/icons/sign-in-white.png'
     }).on('select', () => {
         console.log('Signing in....');
+        auth.signIn(emailInput.text, passwordInput.text);
         MainTabPage.create().open();
         page.dispose();
     }).appendTo(page);

@@ -2,6 +2,7 @@ const {Page, Button, TextView, ui} = require('tabris');
 const style                        = require('../cfg/style.json');
 const SignInPage                   = require('./signInPage.js');
 const SettingsPage                 = require('./settingsPage.js');
+const auth                                = require('./lib/authentication.js');
 
 exports.load = (tab) => {
 
@@ -15,6 +16,7 @@ exports.load = (tab) => {
         image: 'assets/icons/sign-out-white.png'
     }).on('select', () => {
         console.log('Signing out....');
+        auth.signOut();
         SignInPage.create().open();
     }).appendTo(tab);
 
